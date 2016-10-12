@@ -7,8 +7,11 @@ class ViewController: SweetTableController {
     lazy var dataSource: FormDataSource = {
         let dataSource = FormDataSource(delegate: self)
 
-        // Although you can define max and min length using regex, its faster if they're defined
-        // in te min/max length fields first, as that avoids running the RegEx engine unless those numbers match.
+        /*
+         * Although you can define max and min length using regex, its faster if they're defined
+         * in te min/max length fields first, as that avoids running the RegEx engine unless those numbers match.
+         * These regular expressions are for demo purposes only. They're too simple and incomplete for actual username/password validations.
+         */
         let usernameValidator = TextInputValidator(minLength: 3, maxLength: 64, validationPattern: "^\\S+$")
         let passwordValidator = TextInputValidator(minLength: 8, maxLength: 256, validationPattern: "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[^\\d\\w\\s]).*$")
 
