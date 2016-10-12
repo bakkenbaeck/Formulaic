@@ -14,14 +14,7 @@
 
 ## Installation
 
-**Formulaic** is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'Formulaic' , '~> 1'
-```
-
-**Formulaic** is also available through [Carthage](https://github.com/Carthage/Carthage). To install
+**Formulaic** is available through [Carthage](https://github.com/Carthage/Carthage). To install
 it, simply add the following line to your Cartfile:
 
 ```ruby
