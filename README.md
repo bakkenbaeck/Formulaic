@@ -7,7 +7,7 @@
 
 ## Usage
 
-We recommend using a view controller with a collection view or table view.
+Formulaic offers a `FormDataSource` model to back your table or collection view.
 
 Your view controller should have a `FormDataSource` instance, with an array of `FormItem`s defining each field. Those can be a label, a text field or a button for now.
 
