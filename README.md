@@ -7,7 +7,7 @@
 
 ## Usage
 
-We recommend using a view controller with a collection view or table view (we’re not very fond of either `UICollectionViewController` or `UITableViewController`, check out [SweetUIKit](http://github.com/bakkenbaeck/SweetUIKit) for our version of those classes).
+We recommend using a view controller with a collection view or table view.
 
 Your view controller should have a `FormDataSource` instance, with an array of `FormItem`s defining each field. Those can be a label, a text field or a button for now. We might expand it at some point to support more types and maybe combine them.
 
