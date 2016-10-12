@@ -14,6 +14,7 @@
 		9F69B7DA1DAE6C7D00C4510B /* SweetUIKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE736D81DAE6BFD003D8A56 /* SweetUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9F69B7DB1DAE6F5100C4510B /* SweetSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE736D61DAE6BFD003D8A56 /* SweetSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9F69B7DC1DAE6F5400C4510B /* SweetSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE736D61DAE6BFD003D8A56 /* SweetSwift.framework */; };
+		9F69B7DE1DAE741100C4510B /* Theme+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F69B7DD1DAE741100C4510B /* Theme+Color.swift */; };
 		9F7AE0FE1DAE332B00055D8D /* Formulaic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCC96DD1DAD2C140098FD78 /* Formulaic.framework */; };
 		9F7AE1031DAE358800055D8D /* FormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AE1021DAE358800055D8D /* FormCell.swift */; };
 		9F9895FF1DAE6C430035F737 /* SweetUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE736D81DAE6BFD003D8A56 /* SweetUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -92,6 +93,7 @@
 		14F393961CC6517E00616696 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		9F2592561DAD2936006EC4DD /* FormDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormDataSource.swift; sourceTree = "<group>"; };
 		9F2592571DAD2936006EC4DD /* FormItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormItem.swift; sourceTree = "<group>"; };
+		9F69B7DD1DAE741100C4510B /* Theme+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Theme+Color.swift"; sourceTree = "<group>"; };
 		9F7AE1021DAE358800055D8D /* FormCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormCell.swift; sourceTree = "<group>"; };
 		9FCC96C61DAD2A7D0098FD78 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCC96C81DAD2A7E0098FD78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 				9FCC96D11DAD2A7E0098FD78 /* LaunchScreen.storyboard */,
 				9FCC96D41DAD2A7E0098FD78 /* Info.plist */,
 				9F7AE1021DAE358800055D8D /* FormCell.swift */,
+				9F69B7DD1DAE741100C4510B /* Theme+Color.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FCC96CB1DAD2A7E0098FD78 /* ViewController.swift in Sources */,
+				9F69B7DE1DAE741100C4510B /* Theme+Color.swift in Sources */,
 				9F7AE1031DAE358800055D8D /* FormCell.swift in Sources */,
 				9FCC96C91DAD2A7E0098FD78 /* AppDelegate.swift in Sources */,
 			);

@@ -7,7 +7,7 @@ class FormCell: UITableViewCell {
         view.font = .systemFont(ofSize: 16.0)
         view.autocapitalizationType = .none
         view.autocorrectionType = .no
-        view.borderStyle = .none
+        view.borderStyle = .roundedRect
         view.layer.borderWidth = 1.0
         view.layer.borderColor = UIColor.lightGray.cgColor
         view.layer.cornerRadius = 8
@@ -95,9 +95,9 @@ extension FormCell: UITextFieldDelegate {
         formItem.updateValue(to: self.textField.text, userInitiated: true)
 
         if formItem.validate() {
-            self.textField.layer.borderColor = UIColor.blue.cgColor
+            self.textField.layer.borderColor = UIColor.validField.cgColor
         } else {
-            self.textField.layer.borderColor = UIColor.red.cgColor
+            self.textField.layer.borderColor = UIColor.invalidField.cgColor
         }
     }
 }
