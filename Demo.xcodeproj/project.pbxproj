@@ -10,7 +10,10 @@
 		14A139B41AEFC72B00AD732F /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A139B31AEFC72B00AD732F /* Tests.swift */; };
 		14C47E0E1CD2AE5F004A48DF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14C47E0D1CD2AE5F004A48DF /* Info.plist */; };
 		9F2592581DAD2936006EC4DD /* FormDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2592561DAD2936006EC4DD /* FormDataSource.swift */; };
-		9F2592591DAD2936006EC4DD /* TableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2592571DAD2936006EC4DD /* TableItem.swift */; };
+		9F2592591DAD2936006EC4DD /* FormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2592571DAD2936006EC4DD /* FormItem.swift */; };
+		9F7AE0FE1DAE332B00055D8D /* Formulaic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCC96DD1DAD2C140098FD78 /* Formulaic.framework */; };
+		9F7AE1011DAE350300055D8D /* SweetUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCC96FA1DAD30010098FD78 /* SweetUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F7AE1031DAE358800055D8D /* FormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AE1021DAE358800055D8D /* FormCell.swift */; };
 		9FCC96C91DAD2A7E0098FD78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCC96C81DAD2A7E0098FD78 /* AppDelegate.swift */; };
 		9FCC96CB1DAD2A7E0098FD78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCC96CA1DAD2A7E0098FD78 /* ViewController.swift */; };
 		9FCC96D01DAD2A7E0098FD78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FCC96CF1DAD2A7E0098FD78 /* Assets.xcassets */; };
@@ -19,7 +22,7 @@
 		9FCC96E41DAD2C140098FD78 /* Formulaic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCC96DD1DAD2C140098FD78 /* Formulaic.framework */; };
 		9FCC96E51DAD2C140098FD78 /* Formulaic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCC96DD1DAD2C140098FD78 /* Formulaic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9FCC96EA1DAD2C2D0098FD78 /* FormDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2592561DAD2936006EC4DD /* FormDataSource.swift */; };
-		9FCC96EB1DAD2C2D0098FD78 /* TableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2592571DAD2936006EC4DD /* TableItem.swift */; };
+		9FCC96EB1DAD2C2D0098FD78 /* FormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2592571DAD2936006EC4DD /* FormItem.swift */; };
 		9FCC96FC1DAD30010098FD78 /* CACC678E-6F53-3326-8708-D8F2AED3FC35.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = 9FCC96F81DAD30010098FD78 /* CACC678E-6F53-3326-8708-D8F2AED3FC35.bcsymbolmap */; };
 		9FCC96FD1DAD30010098FD78 /* CACC678E-6F53-3326-8708-D8F2AED3FC35.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = 9FCC96F81DAD30010098FD78 /* CACC678E-6F53-3326-8708-D8F2AED3FC35.bcsymbolmap */; };
 		9FCC96FE1DAD30010098FD78 /* EE3EF162-BA4F-3E4B-AFD7-02161348955C.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = 9FCC96F91DAD30010098FD78 /* EE3EF162-BA4F-3E4B-AFD7-02161348955C.bcsymbolmap */; };
@@ -29,16 +32,6 @@
 		9FCC97021DAD30010098FD78 /* SweetUIKit.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 9FCC96FB1DAD30010098FD78 /* SweetUIKit.framework.dSYM */; };
 		9FCC97031DAD30010098FD78 /* SweetUIKit.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 9FCC96FB1DAD30010098FD78 /* SweetUIKit.framework.dSYM */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		9FCC96E21DAD2C140098FD78 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 146D728B1AB782920058798C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9FCC96DC1DAD2C140098FD78;
-			remoteInfo = Formulaic;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		141001141CD298F200C01F60 /* CopyFiles */ = {
@@ -56,6 +49,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				9F7AE1011DAE350300055D8D /* SweetUIKit.framework in Embed Frameworks */,
 				9FCC96E51DAD2C140098FD78 /* Formulaic.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -74,7 +68,8 @@
 		14C47E0D1CD2AE5F004A48DF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14F393961CC6517E00616696 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		9F2592561DAD2936006EC4DD /* FormDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormDataSource.swift; sourceTree = "<group>"; };
-		9F2592571DAD2936006EC4DD /* TableItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableItem.swift; sourceTree = "<group>"; };
+		9F2592571DAD2936006EC4DD /* FormItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormItem.swift; sourceTree = "<group>"; };
+		9F7AE1021DAE358800055D8D /* FormCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormCell.swift; sourceTree = "<group>"; };
 		9FCC96C61DAD2A7D0098FD78 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCC96C81DAD2A7E0098FD78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FCC96CA1DAD2A7E0098FD78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F7AE0FE1DAE332B00055D8D /* Formulaic.framework in Frameworks */,
 				9FCC97001DAD30010098FD78 /* SweetUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,7 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				9F2592561DAD2936006EC4DD /* FormDataSource.swift */,
-				9F2592571DAD2936006EC4DD /* TableItem.swift */,
+				9F2592571DAD2936006EC4DD /* FormItem.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -190,6 +186,7 @@
 				9FCC96CF1DAD2A7E0098FD78 /* Assets.xcassets */,
 				9FCC96D11DAD2A7E0098FD78 /* LaunchScreen.storyboard */,
 				9FCC96D41DAD2A7E0098FD78 /* Info.plist */,
+				9F7AE1021DAE358800055D8D /* FormCell.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -258,7 +255,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				9FCC96E31DAD2C140098FD78 /* PBXTargetDependency */,
 			);
 			name = Demo;
 			productName = Demo;
@@ -370,7 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F2592581DAD2936006EC4DD /* FormDataSource.swift in Sources */,
-				9F2592591DAD2936006EC4DD /* TableItem.swift in Sources */,
+				9F2592591DAD2936006EC4DD /* FormItem.swift in Sources */,
 				14A139B41AEFC72B00AD732F /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FCC96CB1DAD2A7E0098FD78 /* ViewController.swift in Sources */,
+				9F7AE1031DAE358800055D8D /* FormCell.swift in Sources */,
 				9FCC96C91DAD2A7E0098FD78 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,19 +386,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FCC96EA1DAD2C2D0098FD78 /* FormDataSource.swift in Sources */,
-				9FCC96EB1DAD2C2D0098FD78 /* TableItem.swift in Sources */,
+				9FCC96EB1DAD2C2D0098FD78 /* FormItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9FCC96E31DAD2C140098FD78 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9FCC96DC1DAD2C140098FD78 /* Formulaic */;
-			targetProxy = 9FCC96E21DAD2C140098FD78 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9FCC96D11DAD2A7E0098FD78 /* LaunchScreen.storyboard */ = {
@@ -547,7 +536,7 @@
 					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -573,7 +562,7 @@
 					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -598,7 +587,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Formulaic/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.Formulaic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -628,7 +617,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Formulaic/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.Formulaic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -668,6 +657,7 @@
 				9FCC96D61DAD2A7E0098FD78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9FCC96E61DAD2C140098FD78 /* Build configuration list for PBXNativeTarget "Formulaic" */ = {
 			isa = XCConfigurationList;
@@ -676,6 +666,7 @@
 				9FCC96E81DAD2C140098FD78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

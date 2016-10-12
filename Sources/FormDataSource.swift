@@ -1,32 +1,32 @@
 import UIKit
 
-fileprivate let FormItemDidChangeNotification = Notification.Name(rawValue: "FormItemDidChangeNotification")
+let FormItemDidChangeNotification = Notification.Name(rawValue: "FormItemDidChangeNotification")
 
 let itemAnyLength = -1
 
-enum TableViewDataSourceDelegateChangeType {
+public enum TableViewDataSourceDelegateChangeType {
     case insert
     case delete
     case update
 }
 
-protocol TableViewDataSourceDelegate: class {
-    func dataSourceWillChangeContent()
-    func dataSourceDidChangeContent(item: TableItem, at indexPath: IndexPath, for type: TableViewDataSourceDelegateChangeType)
-    func dataSourceDidChangeContent()
+public protocol FormDataSourceDelegate: class {
+    func formDataSourceWillChangeContent()
+    func formDataSourceDidChangeContent(item: FormItem, at indexPath: IndexPath, for type: TableViewDataSourceDelegateChangeType)
+    func formDataSourceDidChangeContent()
 }
 
-protocol FormItemCellDelegate: class {
+public protocol FormItemCellDelegate: class {
     func cellDidChange(_ cell: UITableViewCell)
 }
 
-enum LoginCellDataSourceType {
+public enum FormItemType {
     case input
     case label
     case button
 }
 
-struct TextInputValidator {
+public struct TextInputValidator {
     var minLength: Int
 
     var maxLength: Int
@@ -49,56 +49,24 @@ struct TextInputValidator {
         }
     }
 
-    init(minLength: Int = itemAnyLength, maxLength: Int = itemAnyLength, validationPattern: String? = nil) {
+    public init(minLength: Int = itemAnyLength, maxLength: Int = itemAnyLength, validationPattern: String? = nil) {
         self.minLength = minLength
         self.maxLength = maxLength
         self.validationPattern = validationPattern
     }
 }
 
-class FormItem: TableItem {
 
-    var title = ""
+open class FormDataSource: NSObject {
+    open weak var delegate: FormDataSourceDelegate?
 
-    var value: AnyHashable? {
-        didSet {
-            NotificationCenter.default.post(name: FormItemDidChangeNotification, object: self)
-        }
-    }
-
-    var isSecureTextEntry: Bool
-
-    var type: LoginCellDataSourceType
-
-    var itemValidation: TextInputValidator?
-
-    var fieldName: String?
-
-    init(title: String, fieldName: String? = nil, isSecureTextEntry: Bool = false, type: LoginCellDataSourceType, textInputValidator: TextInputValidator? = nil) {
-        self.itemValidation = textInputValidator
-        self.type = type
-        self.title = title
-        self.fieldName = fieldName
-        self.isSecureTextEntry = isSecureTextEntry
-
-        super.init()
-    }
-
-    override var hashValue: Int {
-        return self.title.hashValue
-    }
-}
-
-class FormDataSource: NSObject {
-    weak var delegate: TableViewDataSourceDelegate?
-
-    var items: [FormItem]
+    open var items: [FormItem]
     
-    var count: Int {
+    open var count: Int {
         return self.items.count
     }
 
-    init(delegate: TableViewDataSourceDelegate? = nil) {
+    public init(delegate: FormDataSourceDelegate? = nil) {
         self.delegate = delegate
         self.items = []
 
@@ -107,21 +75,21 @@ class FormDataSource: NSObject {
         NotificationCenter.default.addObserver(self, selector: #selector(FormDataSource.didUpdateItem(_:)), name: FormItemDidChangeNotification, object: nil)
     }
 
-    func didUpdateItem(_ notification: Notification?) {
+    open func didUpdateItem(_ notification: Notification?) {
         guard let formItem = notification?.object as? FormItem else { return }
         guard let index = self.items.index(of: formItem) else { fatalError("FormItem doesn't belong to data source") }
         let indexPath = IndexPath(row: index, section: 0)
 
-        self.delegate?.dataSourceWillChangeContent()
-        self.delegate?.dataSourceDidChangeContent(item: formItem, at: indexPath, for: .update)
-        self.delegate?.dataSourceDidChangeContent()
+        self.delegate?.formDataSourceWillChangeContent()
+        self.delegate?.formDataSourceDidChangeContent(item: formItem, at: indexPath, for: .update)
+        self.delegate?.formDataSourceDidChangeContent()
     }
 
-    func item(at indexPath: IndexPath) -> FormItem {
+    open func item(at indexPath: IndexPath) -> FormItem {
         return self.items[indexPath.row]
     }
 
-    func item(withFieldName fieldName: String) -> FormItem? {
+    open func item(withFieldName fieldName: String) -> FormItem? {
         for item in self.items {
             if item.fieldName == fieldName {
                 return item
