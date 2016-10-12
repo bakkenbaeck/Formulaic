@@ -31,10 +31,16 @@ public struct TextInputValidator {
 
     var maxLength: Int
 
+    var validationPattern: String?
+
     var validationRegex: NSRegularExpression?
 
-    var validationPattern: String? {
-        didSet {
+    public init(minLength: Int = itemAnyLength, maxLength: Int = itemAnyLength, validationPattern: String? = nil) {
+        self.minLength = minLength
+        self.maxLength = maxLength
+        self.validationPattern = validationPattern
+
+        if validationPattern != nil {
             guard let pattern = self.validationPattern else {
                 self.validationRegex = nil
 
@@ -42,17 +48,11 @@ public struct TextInputValidator {
             }
 
             do {
-                self.validationRegex = try NSRegularExpression(pattern: pattern, options: [.anchorsMatchLines, .caseInsensitive, .dotMatchesLineSeparators, .useUnicodeWordBoundaries])
+                self.validationRegex = try NSRegularExpression(pattern: pattern, options: [.anchorsMatchLines, .dotMatchesLineSeparators, .useUnicodeWordBoundaries])
             } catch {
                 fatalError("Invalid regular expression pattern: \(pattern)")
             }
         }
-    }
-
-    public init(minLength: Int = itemAnyLength, maxLength: Int = itemAnyLength, validationPattern: String? = nil) {
-        self.minLength = minLength
-        self.maxLength = maxLength
-        self.validationPattern = validationPattern
     }
 }
 
