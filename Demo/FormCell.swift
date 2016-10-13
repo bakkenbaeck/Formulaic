@@ -7,6 +7,11 @@ class FormCell: UITableViewCell {
         view.font = .systemFont(ofSize: 16.0)
         view.autocapitalizationType = .none
         view.autocorrectionType = .no
+        view.borderStyle = .roundedRect
+        view.layer.borderWidth = 1.0
+        view.layer.borderColor = UIColor.lightGray.cgColor
+        view.layer.cornerRadius = 8
+        view.layer.masksToBounds = true
 
         return view
     }()
@@ -85,6 +90,14 @@ class FormCell: UITableViewCell {
 
 extension FormCell: UITextFieldDelegate {
     func textFieldDidChange() {
-        self.formItem?.updateValue(to: self.textField.text, userInitiated: true)
+        guard let formItem = self.formItem else { return }
+
+        formItem.updateValue(to: self.textField.text, userInitiated: true)
+
+        if formItem.validate() {
+            self.textField.layer.borderColor = UIColor.validField.cgColor
+        } else {
+            self.textField.layer.borderColor = UIColor.invalidField.cgColor
+        }
     }
 }

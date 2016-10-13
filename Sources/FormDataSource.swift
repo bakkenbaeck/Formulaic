@@ -2,9 +2,9 @@ import UIKit
 
 let FormItemDidChangeNotification = Notification.Name(rawValue: "FormItemDidChangeNotification")
 
-let itemAnyLength = -1
+public let itemAnyLength = -1
 
-public enum TableViewDataSourceDelegateChangeType {
+public enum FormDataSourceDelegateChangeType {
     case insert
     case delete
     case update
@@ -12,7 +12,7 @@ public enum TableViewDataSourceDelegateChangeType {
 
 public protocol FormDataSourceDelegate: class {
     func formDataSourceWillChangeContent()
-    func formDataSourceDidChangeContent(item: FormItem, at indexPath: IndexPath, for type: TableViewDataSourceDelegateChangeType)
+    func formDataSourceDidChangeContent(item: FormItem, at indexPath: IndexPath, for type: FormDataSourceDelegateChangeType)
     func formDataSourceDidChangeContent()
 }
 
@@ -27,14 +27,20 @@ public enum FormItemType {
 }
 
 public struct TextInputValidator {
-    var minLength: Int
+    public var minLength: Int
 
-    var maxLength: Int
+    public var maxLength: Int
 
-    var validationRegex: NSRegularExpression?
+    public var validationPattern: String?
 
-    var validationPattern: String? {
-        didSet {
+    public var validationRegex: NSRegularExpression?
+
+    public init(minLength: Int = itemAnyLength, maxLength: Int = itemAnyLength, validationPattern: String? = nil) {
+        self.minLength = minLength
+        self.maxLength = maxLength
+        self.validationPattern = validationPattern
+
+        if validationPattern != nil {
             guard let pattern = self.validationPattern else {
                 self.validationRegex = nil
 
@@ -42,17 +48,11 @@ public struct TextInputValidator {
             }
 
             do {
-                self.validationRegex = try NSRegularExpression(pattern: pattern, options: [.anchorsMatchLines, .caseInsensitive, .dotMatchesLineSeparators, .useUnicodeWordBoundaries])
+                self.validationRegex = try NSRegularExpression(pattern: pattern, options: [.anchorsMatchLines, .dotMatchesLineSeparators, .useUnicodeWordBoundaries])
             } catch {
                 fatalError("Invalid regular expression pattern: \(pattern)")
             }
         }
-    }
-
-    public init(minLength: Int = itemAnyLength, maxLength: Int = itemAnyLength, validationPattern: String? = nil) {
-        self.minLength = minLength
-        self.maxLength = maxLength
-        self.validationPattern = validationPattern
     }
 }
 

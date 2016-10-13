@@ -7,12 +7,20 @@ class ViewController: SweetTableController {
     lazy var dataSource: FormDataSource = {
         let dataSource = FormDataSource(delegate: self)
 
+        /*
+         * Although you can define max and min length using regex, its faster if they're defined
+         * in te min/max length fields first, as that avoids running the RegEx engine unless those numbers match.
+         * These regular expressions are for demo purposes only. They're too simple and incomplete for actual username/password validations.
+         */
+        let usernameValidator = TextInputValidator(minLength: 3, maxLength: 64, validationPattern: "^\\S+$")
+        let passwordValidator = TextInputValidator(minLength: 8, maxLength: 256, validationPattern: "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[^\\d\\w\\s]).*$")
+
         dataSource.items = [
             FormItem(title: "Title", type: .label),
-            FormItem(title: "my title", fieldName: "username", type: .input, textInputValidator : nil),
+            FormItem(title: "my title", fieldName: "username", type: .input, textInputValidator : usernameValidator),
 
             FormItem(title: "Password", type: .label),
-            FormItem(title: "********", fieldName: "password", isSecureTextEntry: true, type: .input, textInputValidator: nil),
+            FormItem(title: "********", fieldName: "password", isSecureTextEntry: true, type: .input, textInputValidator: passwordValidator),
 
             FormItem(title: "Change Title", action: #selector(didPressButton), target: self, type: .button)
         ]
@@ -62,7 +70,7 @@ extension ViewController: FormDataSourceDelegate {
         self.tableView.beginUpdates()
     }
 
-    func formDataSourceDidChangeContent(item: FormItem, at indexPath: IndexPath, for type: TableViewDataSourceDelegateChangeType) {
+    func formDataSourceDidChangeContent(item: FormItem, at indexPath: IndexPath, for type: FormDataSourceDelegateChangeType) {
         if type == .update {
             self.tableView.deleteRows(at: [indexPath], with: .automatic)
             self.tableView.insertRows(at: [indexPath], with: .automatic)
