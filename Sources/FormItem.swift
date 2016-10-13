@@ -1,7 +1,7 @@
 import Foundation
 import SweetSwift
 
-open class FormItem: Hashable {
+public class FormItem: Hashable {
 
     public var title = ""
 

@@ -70,7 +70,7 @@ extension ViewController: FormDataSourceDelegate {
         self.tableView.beginUpdates()
     }
 
-    func formDataSourceDidChangeContent(item: FormItem, at indexPath: IndexPath, for type: TableViewDataSourceDelegateChangeType) {
+    func formDataSourceDidChangeContent(item: FormItem, at indexPath: IndexPath, for type: FormDataSourceDelegateChangeType) {
         if type == .update {
             self.tableView.deleteRows(at: [indexPath], with: .automatic)
             self.tableView.insertRows(at: [indexPath], with: .automatic)

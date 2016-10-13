@@ -2,9 +2,9 @@ import UIKit
 
 let FormItemDidChangeNotification = Notification.Name(rawValue: "FormItemDidChangeNotification")
 
-let itemAnyLength = -1
+public let itemAnyLength = -1
 
-public enum TableViewDataSourceDelegateChangeType {
+public enum FormDataSourceDelegateChangeType {
     case insert
     case delete
     case update
@@ -12,7 +12,7 @@ public enum TableViewDataSourceDelegateChangeType {
 
 public protocol FormDataSourceDelegate: class {
     func formDataSourceWillChangeContent()
-    func formDataSourceDidChangeContent(item: FormItem, at indexPath: IndexPath, for type: TableViewDataSourceDelegateChangeType)
+    func formDataSourceDidChangeContent(item: FormItem, at indexPath: IndexPath, for type: FormDataSourceDelegateChangeType)
     func formDataSourceDidChangeContent()
 }
 
@@ -27,13 +27,13 @@ public enum FormItemType {
 }
 
 public struct TextInputValidator {
-    var minLength: Int
+    public var minLength: Int
 
-    var maxLength: Int
+    public var maxLength: Int
 
-    var validationPattern: String?
+    public var validationPattern: String?
 
-    var validationRegex: NSRegularExpression?
+    public var validationRegex: NSRegularExpression?
 
     public init(minLength: Int = itemAnyLength, maxLength: Int = itemAnyLength, validationPattern: String? = nil) {
         self.minLength = minLength
