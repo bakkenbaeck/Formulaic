@@ -9,16 +9,16 @@
 /* Begin PBXBuildFile section */
 		14A139B41AEFC72B00AD732F /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A139B31AEFC72B00AD732F /* Tests.swift */; };
 		14C47E0E1CD2AE5F004A48DF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14C47E0D1CD2AE5F004A48DF /* Info.plist */; };
+		9F2369521DAF7E6F0023B2E5 /* SweetSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE736D61DAE6BFD003D8A56 /* SweetSwift.framework */; };
+		9F2369531DAF7E700023B2E5 /* SweetSwift.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE736D61DAE6BFD003D8A56 /* SweetSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9F2592581DAD2936006EC4DD /* FormDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2592561DAD2936006EC4DD /* FormDataSource.swift */; };
 		9F2592591DAD2936006EC4DD /* FormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2592571DAD2936006EC4DD /* FormItem.swift */; };
-		9F69B7DA1DAE6C7D00C4510B /* SweetUIKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE736D81DAE6BFD003D8A56 /* SweetUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9F69B7DB1DAE6F5100C4510B /* SweetSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE736D61DAE6BFD003D8A56 /* SweetSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9F69B7DC1DAE6F5400C4510B /* SweetSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE736D61DAE6BFD003D8A56 /* SweetSwift.framework */; };
 		9F69B7DE1DAE741100C4510B /* Theme+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F69B7DD1DAE741100C4510B /* Theme+Color.swift */; };
 		9F7AE0FE1DAE332B00055D8D /* Formulaic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCC96DD1DAD2C140098FD78 /* Formulaic.framework */; };
 		9F7AE1031DAE358800055D8D /* FormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AE1021DAE358800055D8D /* FormCell.swift */; };
 		9F9895FF1DAE6C430035F737 /* SweetUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE736D81DAE6BFD003D8A56 /* SweetUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9FBF91541DAF6F0600FA6CE3 /* SweetUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE736D81DAE6BFD003D8A56 /* SweetUIKit.framework */; };
 		9FCC96C91DAD2A7E0098FD78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCC96C81DAD2A7E0098FD78 /* AppDelegate.swift */; };
 		9FCC96CB1DAD2A7E0098FD78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCC96CA1DAD2A7E0098FD78 /* ViewController.swift */; };
 		9FCC96D01DAD2A7E0098FD78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FCC96CF1DAD2A7E0098FD78 /* Assets.xcassets */; };
@@ -61,7 +61,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9F69B7DA1DAE6C7D00C4510B /* SweetUIKit.framework in Copy Frameworks */,
+				9F2369531DAF7E700023B2E5 /* SweetSwift.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FBF91541DAF6F0600FA6CE3 /* SweetUIKit.framework in Frameworks */,
+				9F2369521DAF7E6F0023B2E5 /* SweetSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
