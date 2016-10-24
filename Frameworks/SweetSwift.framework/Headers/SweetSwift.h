@@ -1,19 +1,9 @@
-//
-//  SweetSwift.h
-//  SweetSwift
-//
-//  Created by Igor Ranieri on 12/10/2016.
-//
-//
+#import <Foundation/Foundation.h>
 
-#import <UIKit/UIKit.h>
-
-//! Project version number for SweetSwift.
+//! Project version number for SweetUIKit.
 FOUNDATION_EXPORT double SweetSwiftVersionNumber;
 
-//! Project version string for SweetSwift.
+//! Project version string for SweetUIKit.
 FOUNDATION_EXPORT const unsigned char SweetSwiftVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <SweetSwift/PublicHeader.h>
-
-
+// In this header, you should import all the public headers of your framework using statements like #import <SweetUIKit/PublicHeader.h>
