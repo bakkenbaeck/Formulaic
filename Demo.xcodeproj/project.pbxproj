@@ -28,14 +28,6 @@
 		9FCC96E51DAD2C140098FD78 /* Formulaic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCC96DD1DAD2C140098FD78 /* Formulaic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9FCC96EA1DAD2C2D0098FD78 /* FormDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2592561DAD2936006EC4DD /* FormDataSource.swift */; };
 		9FCC96EB1DAD2C2D0098FD78 /* FormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2592571DAD2936006EC4DD /* FormItem.swift */; };
-		9FE736DA1DAE6BFD003D8A56 /* ACEE033F-1909-3598-8EEB-56AFDECA5CFE.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = 9FE736D21DAE6BFD003D8A56 /* ACEE033F-1909-3598-8EEB-56AFDECA5CFE.bcsymbolmap */; };
-		9FE736DB1DAE6BFD003D8A56 /* ACEE033F-1909-3598-8EEB-56AFDECA5CFE.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = 9FE736D21DAE6BFD003D8A56 /* ACEE033F-1909-3598-8EEB-56AFDECA5CFE.bcsymbolmap */; };
-		9FE736DC1DAE6BFD003D8A56 /* C440F3DA-0130-381A-ABE8-3D6B100665EA.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = 9FE736D31DAE6BFD003D8A56 /* C440F3DA-0130-381A-ABE8-3D6B100665EA.bcsymbolmap */; };
-		9FE736DD1DAE6BFD003D8A56 /* C440F3DA-0130-381A-ABE8-3D6B100665EA.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = 9FE736D31DAE6BFD003D8A56 /* C440F3DA-0130-381A-ABE8-3D6B100665EA.bcsymbolmap */; };
-		9FE736DE1DAE6BFD003D8A56 /* CACC678E-6F53-3326-8708-D8F2AED3FC35.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = 9FE736D41DAE6BFD003D8A56 /* CACC678E-6F53-3326-8708-D8F2AED3FC35.bcsymbolmap */; };
-		9FE736DF1DAE6BFD003D8A56 /* CACC678E-6F53-3326-8708-D8F2AED3FC35.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = 9FE736D41DAE6BFD003D8A56 /* CACC678E-6F53-3326-8708-D8F2AED3FC35.bcsymbolmap */; };
-		9FE736E01DAE6BFD003D8A56 /* EE3EF162-BA4F-3E4B-AFD7-02161348955C.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = 9FE736D51DAE6BFD003D8A56 /* EE3EF162-BA4F-3E4B-AFD7-02161348955C.bcsymbolmap */; };
-		9FE736E11DAE6BFD003D8A56 /* EE3EF162-BA4F-3E4B-AFD7-02161348955C.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = 9FE736D51DAE6BFD003D8A56 /* EE3EF162-BA4F-3E4B-AFD7-02161348955C.bcsymbolmap */; };
 		9FE736E21DAE6BFD003D8A56 /* SweetSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE736D61DAE6BFD003D8A56 /* SweetSwift.framework */; };
 		9FE736E41DAE6BFD003D8A56 /* SweetSwift.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 9FE736D71DAE6BFD003D8A56 /* SweetSwift.framework.dSYM */; };
 		9FE736E51DAE6BFD003D8A56 /* SweetSwift.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 9FE736D71DAE6BFD003D8A56 /* SweetSwift.framework.dSYM */; };
@@ -104,10 +96,6 @@
 		9FCC96DD1DAD2C140098FD78 /* Formulaic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Formulaic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCC96DF1DAD2C140098FD78 /* Formulaic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Formulaic.h; sourceTree = "<group>"; };
 		9FCC96E01DAD2C140098FD78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9FE736D21DAE6BFD003D8A56 /* ACEE033F-1909-3598-8EEB-56AFDECA5CFE.bcsymbolmap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ACEE033F-1909-3598-8EEB-56AFDECA5CFE.bcsymbolmap"; sourceTree = "<group>"; };
-		9FE736D31DAE6BFD003D8A56 /* C440F3DA-0130-381A-ABE8-3D6B100665EA.bcsymbolmap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "C440F3DA-0130-381A-ABE8-3D6B100665EA.bcsymbolmap"; sourceTree = "<group>"; };
-		9FE736D41DAE6BFD003D8A56 /* CACC678E-6F53-3326-8708-D8F2AED3FC35.bcsymbolmap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "CACC678E-6F53-3326-8708-D8F2AED3FC35.bcsymbolmap"; sourceTree = "<group>"; };
-		9FE736D51DAE6BFD003D8A56 /* EE3EF162-BA4F-3E4B-AFD7-02161348955C.bcsymbolmap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "EE3EF162-BA4F-3E4B-AFD7-02161348955C.bcsymbolmap"; sourceTree = "<group>"; };
 		9FE736D61DAE6BFD003D8A56 /* SweetSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SweetSwift.framework; sourceTree = "<group>"; };
 		9FE736D71DAE6BFD003D8A56 /* SweetSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = SweetSwift.framework.dSYM; sourceTree = "<group>"; };
 		9FE736D81DAE6BFD003D8A56 /* SweetUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SweetUIKit.framework; sourceTree = "<group>"; };
@@ -236,10 +224,6 @@
 		9FCC96F71DAD2FD70098FD78 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9FE736D21DAE6BFD003D8A56 /* ACEE033F-1909-3598-8EEB-56AFDECA5CFE.bcsymbolmap */,
-				9FE736D31DAE6BFD003D8A56 /* C440F3DA-0130-381A-ABE8-3D6B100665EA.bcsymbolmap */,
-				9FE736D41DAE6BFD003D8A56 /* CACC678E-6F53-3326-8708-D8F2AED3FC35.bcsymbolmap */,
-				9FE736D51DAE6BFD003D8A56 /* EE3EF162-BA4F-3E4B-AFD7-02161348955C.bcsymbolmap */,
 				9FE736D61DAE6BFD003D8A56 /* SweetSwift.framework */,
 				9FE736D71DAE6BFD003D8A56 /* SweetSwift.framework.dSYM */,
 				9FE736D81DAE6BFD003D8A56 /* SweetUIKit.framework */,
@@ -372,10 +356,6 @@
 				14C47E0E1CD2AE5F004A48DF /* Info.plist in Resources */,
 				9FE736E81DAE6BFD003D8A56 /* SweetUIKit.framework.dSYM in Resources */,
 				9FE736E41DAE6BFD003D8A56 /* SweetSwift.framework.dSYM in Resources */,
-				9FE736DA1DAE6BFD003D8A56 /* ACEE033F-1909-3598-8EEB-56AFDECA5CFE.bcsymbolmap in Resources */,
-				9FE736E01DAE6BFD003D8A56 /* EE3EF162-BA4F-3E4B-AFD7-02161348955C.bcsymbolmap in Resources */,
-				9FE736DE1DAE6BFD003D8A56 /* CACC678E-6F53-3326-8708-D8F2AED3FC35.bcsymbolmap in Resources */,
-				9FE736DC1DAE6BFD003D8A56 /* C440F3DA-0130-381A-ABE8-3D6B100665EA.bcsymbolmap in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,12 +363,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FE736DD1DAE6BFD003D8A56 /* C440F3DA-0130-381A-ABE8-3D6B100665EA.bcsymbolmap in Resources */,
 				9FE736E51DAE6BFD003D8A56 /* SweetSwift.framework.dSYM in Resources */,
-				9FE736DF1DAE6BFD003D8A56 /* CACC678E-6F53-3326-8708-D8F2AED3FC35.bcsymbolmap in Resources */,
-				9FE736E11DAE6BFD003D8A56 /* EE3EF162-BA4F-3E4B-AFD7-02161348955C.bcsymbolmap in Resources */,
 				9FCC96D31DAD2A7E0098FD78 /* LaunchScreen.storyboard in Resources */,
-				9FE736DB1DAE6BFD003D8A56 /* ACEE033F-1909-3598-8EEB-56AFDECA5CFE.bcsymbolmap in Resources */,
 				9FE736E91DAE6BFD003D8A56 /* SweetUIKit.framework.dSYM in Resources */,
 				9FCC96D01DAD2A7E0098FD78 /* Assets.xcassets in Resources */,
 			);
@@ -540,7 +516,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sample.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Debug;
 		};
@@ -554,7 +530,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sample.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Release;
 		};
@@ -579,7 +555,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -603,7 +579,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -636,7 +612,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -669,7 +645,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.Formulaic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
