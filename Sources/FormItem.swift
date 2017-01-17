@@ -5,13 +5,7 @@ public class FormItem: Hashable {
 
     public var title = ""
 
-    fileprivate var _value: AnyHashable?
-
-    public var value: AnyHashable? {
-        get {
-            return _value
-        }
-    }
+    public var value: AnyHashable?
 
     public var isSecureTextEntry: Bool
 
@@ -25,7 +19,7 @@ public class FormItem: Hashable {
 
     public var target: Any?
 
-    public init(title: String, fieldName: String? = nil, action: Selector? = nil, target: Any? = nil, isSecureTextEntry: Bool = false, type: FormItemType, textInputValidator: TextInputValidator? = nil) {
+    public init(title: String, value: AnyHashable? = nil, fieldName: String? = nil, action: Selector? = nil, target: Any? = nil, isSecureTextEntry: Bool = false, type: FormItemType, textInputValidator: TextInputValidator? = nil) {
         self.action = action
         self.target = target
         self.textInputValidator = textInputValidator
@@ -33,6 +27,7 @@ public class FormItem: Hashable {
         self.title = title
         self.fieldName = fieldName
         self.isSecureTextEntry = isSecureTextEntry
+        self.value = value
     }
 
     public var hashValue: Int {
@@ -44,7 +39,7 @@ public class FormItem: Hashable {
     }
 
     public func updateValue(to value: AnyHashable?, userInitiated: Bool) {
-        self._value = value
+        self.value = value
         
         if !userInitiated {
             NotificationCenter.default.post(name: FormItemDidChangeNotification, object: self)
