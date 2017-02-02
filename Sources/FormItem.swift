@@ -1,5 +1,4 @@
 import Foundation
-import SweetSwift
 
 public class FormItem: Hashable {
 
@@ -51,16 +50,16 @@ public class FormItem: Hashable {
         guard let validator = self.textInputValidator else { return true }
 
         let none = NSRegularExpression.MatchingOptions(rawValue: 0)
-        let range = NSRange(location: 0, length: value.length)
+        let range = NSRange(location: 0, length: value.characters.count)
 
         var isValid = true
 
         if isValid && validator.minLength != itemAnyLength {
-            isValid = value.length >= validator.minLength
+            isValid = value.characters.count >= validator.minLength
         }
 
         if isValid && validator.maxLength != itemAnyLength {
-            isValid = value.length <= validator.maxLength
+            isValid = value.characters.count <= validator.maxLength
         }
 
         if isValid {
