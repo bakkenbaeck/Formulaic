@@ -9,12 +9,8 @@
 /* Begin PBXBuildFile section */
 		14A139B41AEFC72B00AD732F /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A139B31AEFC72B00AD732F /* Tests.swift */; };
 		14C47E0E1CD2AE5F004A48DF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14C47E0D1CD2AE5F004A48DF /* Info.plist */; };
-		9F2369521DAF7E6F0023B2E5 /* SweetSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE736D61DAE6BFD003D8A56 /* SweetSwift.framework */; };
-		9F2369531DAF7E700023B2E5 /* SweetSwift.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE736D61DAE6BFD003D8A56 /* SweetSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9F2592581DAD2936006EC4DD /* FormDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2592561DAD2936006EC4DD /* FormDataSource.swift */; };
 		9F2592591DAD2936006EC4DD /* FormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2592571DAD2936006EC4DD /* FormItem.swift */; };
-		9F69B7DB1DAE6F5100C4510B /* SweetSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE736D61DAE6BFD003D8A56 /* SweetSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F69B7DC1DAE6F5400C4510B /* SweetSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE736D61DAE6BFD003D8A56 /* SweetSwift.framework */; };
 		9F69B7DE1DAE741100C4510B /* Theme+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F69B7DD1DAE741100C4510B /* Theme+Color.swift */; };
 		9F7AE0FE1DAE332B00055D8D /* Formulaic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCC96DD1DAD2C140098FD78 /* Formulaic.framework */; };
 		9F7AE1031DAE358800055D8D /* FormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AE1021DAE358800055D8D /* FormCell.swift */; };
@@ -28,9 +24,6 @@
 		9FCC96E51DAD2C140098FD78 /* Formulaic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCC96DD1DAD2C140098FD78 /* Formulaic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9FCC96EA1DAD2C2D0098FD78 /* FormDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2592561DAD2936006EC4DD /* FormDataSource.swift */; };
 		9FCC96EB1DAD2C2D0098FD78 /* FormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2592571DAD2936006EC4DD /* FormItem.swift */; };
-		9FE736E21DAE6BFD003D8A56 /* SweetSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE736D61DAE6BFD003D8A56 /* SweetSwift.framework */; };
-		9FE736E41DAE6BFD003D8A56 /* SweetSwift.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 9FE736D71DAE6BFD003D8A56 /* SweetSwift.framework.dSYM */; };
-		9FE736E51DAE6BFD003D8A56 /* SweetSwift.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 9FE736D71DAE6BFD003D8A56 /* SweetSwift.framework.dSYM */; };
 		9FE736E61DAE6BFD003D8A56 /* SweetUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE736D81DAE6BFD003D8A56 /* SweetUIKit.framework */; };
 		9FE736E71DAE6BFD003D8A56 /* SweetUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE736D81DAE6BFD003D8A56 /* SweetUIKit.framework */; };
 		9FE736E81DAE6BFD003D8A56 /* SweetUIKit.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 9FE736D91DAE6BFD003D8A56 /* SweetUIKit.framework.dSYM */; };
@@ -53,7 +46,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9F2369531DAF7E700023B2E5 /* SweetSwift.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,7 +58,6 @@
 			files = (
 				9FCC96E51DAD2C140098FD78 /* Formulaic.framework in Embed Frameworks */,
 				9F9895FF1DAE6C430035F737 /* SweetUIKit.framework in Embed Frameworks */,
-				9F69B7DB1DAE6F5100C4510B /* SweetSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,8 +87,6 @@
 		9FCC96DD1DAD2C140098FD78 /* Formulaic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Formulaic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCC96DF1DAD2C140098FD78 /* Formulaic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Formulaic.h; sourceTree = "<group>"; };
 		9FCC96E01DAD2C140098FD78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9FE736D61DAE6BFD003D8A56 /* SweetSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SweetSwift.framework; sourceTree = "<group>"; };
-		9FE736D71DAE6BFD003D8A56 /* SweetSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = SweetSwift.framework.dSYM; sourceTree = "<group>"; };
 		9FE736D81DAE6BFD003D8A56 /* SweetUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SweetUIKit.framework; sourceTree = "<group>"; };
 		9FE736D91DAE6BFD003D8A56 /* SweetUIKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = SweetUIKit.framework.dSYM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,7 +98,6 @@
 			files = (
 				9F7AE0FE1DAE332B00055D8D /* Formulaic.framework in Frameworks */,
 				9FE736E61DAE6BFD003D8A56 /* SweetUIKit.framework in Frameworks */,
-				9FE736E21DAE6BFD003D8A56 /* SweetSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +107,6 @@
 			files = (
 				9FCC96E41DAD2C140098FD78 /* Formulaic.framework in Frameworks */,
 				9FE736E71DAE6BFD003D8A56 /* SweetUIKit.framework in Frameworks */,
-				9F69B7DC1DAE6F5400C4510B /* SweetSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,7 +114,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F2369521DAF7E6F0023B2E5 /* SweetSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,8 +210,6 @@
 		9FCC96F71DAD2FD70098FD78 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9FE736D61DAE6BFD003D8A56 /* SweetSwift.framework */,
-				9FE736D71DAE6BFD003D8A56 /* SweetSwift.framework.dSYM */,
 				9FE736D81DAE6BFD003D8A56 /* SweetUIKit.framework */,
 				9FE736D91DAE6BFD003D8A56 /* SweetUIKit.framework.dSYM */,
 			);
@@ -355,7 +339,6 @@
 			files = (
 				14C47E0E1CD2AE5F004A48DF /* Info.plist in Resources */,
 				9FE736E81DAE6BFD003D8A56 /* SweetUIKit.framework.dSYM in Resources */,
-				9FE736E41DAE6BFD003D8A56 /* SweetSwift.framework.dSYM in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +346,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FE736E51DAE6BFD003D8A56 /* SweetSwift.framework.dSYM in Resources */,
 				9FCC96D31DAD2A7E0098FD78 /* LaunchScreen.storyboard in Resources */,
 				9FE736E91DAE6BFD003D8A56 /* SweetUIKit.framework.dSYM in Resources */,
 				9FCC96D01DAD2A7E0098FD78 /* Assets.xcassets in Resources */,
