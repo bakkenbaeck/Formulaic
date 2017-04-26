@@ -14,7 +14,6 @@
 		9F69B7DE1DAE741100C4510B /* Theme+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F69B7DD1DAE741100C4510B /* Theme+Color.swift */; };
 		9F7AE0FE1DAE332B00055D8D /* Formulaic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCC96DD1DAD2C140098FD78 /* Formulaic.framework */; };
 		9F7AE1031DAE358800055D8D /* FormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AE1021DAE358800055D8D /* FormCell.swift */; };
-		9F9895FF1DAE6C430035F737 /* SweetUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE736D81DAE6BFD003D8A56 /* SweetUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9FCC96C91DAD2A7E0098FD78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCC96C81DAD2A7E0098FD78 /* AppDelegate.swift */; };
 		9FCC96CB1DAD2A7E0098FD78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCC96CA1DAD2A7E0098FD78 /* ViewController.swift */; };
 		9FCC96D01DAD2A7E0098FD78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FCC96CF1DAD2A7E0098FD78 /* Assets.xcassets */; };
@@ -24,10 +23,10 @@
 		9FCC96E51DAD2C140098FD78 /* Formulaic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCC96DD1DAD2C140098FD78 /* Formulaic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9FCC96EA1DAD2C2D0098FD78 /* FormDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2592561DAD2936006EC4DD /* FormDataSource.swift */; };
 		9FCC96EB1DAD2C2D0098FD78 /* FormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2592571DAD2936006EC4DD /* FormItem.swift */; };
-		9FE736E61DAE6BFD003D8A56 /* SweetUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE736D81DAE6BFD003D8A56 /* SweetUIKit.framework */; };
-		9FE736E71DAE6BFD003D8A56 /* SweetUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE736D81DAE6BFD003D8A56 /* SweetUIKit.framework */; };
-		9FE736E81DAE6BFD003D8A56 /* SweetUIKit.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 9FE736D91DAE6BFD003D8A56 /* SweetUIKit.framework.dSYM */; };
-		9FE736E91DAE6BFD003D8A56 /* SweetUIKit.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 9FE736D91DAE6BFD003D8A56 /* SweetUIKit.framework.dSYM */; };
+		9FF8806C1EB098E200DEDB1C /* SweetSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF8806A1EB098E200DEDB1C /* SweetSwift.framework */; };
+		9FF8806D1EB098E200DEDB1C /* SweetSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF8806A1EB098E200DEDB1C /* SweetSwift.framework */; };
+		9FF8806E1EB098E200DEDB1C /* SweetUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF8806B1EB098E200DEDB1C /* SweetUIKit.framework */; };
+		9FF8806F1EB098E200DEDB1C /* SweetUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF8806B1EB098E200DEDB1C /* SweetUIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,7 +56,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				9FCC96E51DAD2C140098FD78 /* Formulaic.framework in Embed Frameworks */,
-				9F9895FF1DAE6C430035F737 /* SweetUIKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,8 +85,8 @@
 		9FCC96DD1DAD2C140098FD78 /* Formulaic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Formulaic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCC96DF1DAD2C140098FD78 /* Formulaic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Formulaic.h; sourceTree = "<group>"; };
 		9FCC96E01DAD2C140098FD78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9FE736D81DAE6BFD003D8A56 /* SweetUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SweetUIKit.framework; sourceTree = "<group>"; };
-		9FE736D91DAE6BFD003D8A56 /* SweetUIKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = SweetUIKit.framework.dSYM; sourceTree = "<group>"; };
+		9FF8806A1EB098E200DEDB1C /* SweetSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SweetSwift.framework; path = Carthage/Build/iOS/SweetSwift.framework; sourceTree = SOURCE_ROOT; };
+		9FF8806B1EB098E200DEDB1C /* SweetUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SweetUIKit.framework; path = Carthage/Build/iOS/SweetUIKit.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +95,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F7AE0FE1DAE332B00055D8D /* Formulaic.framework in Frameworks */,
-				9FE736E61DAE6BFD003D8A56 /* SweetUIKit.framework in Frameworks */,
+				9FF8806E1EB098E200DEDB1C /* SweetUIKit.framework in Frameworks */,
+				9FF8806C1EB098E200DEDB1C /* SweetSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +105,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FCC96E41DAD2C140098FD78 /* Formulaic.framework in Frameworks */,
-				9FE736E71DAE6BFD003D8A56 /* SweetUIKit.framework in Frameworks */,
+				9FF8806F1EB098E200DEDB1C /* SweetUIKit.framework in Frameworks */,
+				9FF8806D1EB098E200DEDB1C /* SweetSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,8 +210,8 @@
 		9FCC96F71DAD2FD70098FD78 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9FE736D81DAE6BFD003D8A56 /* SweetUIKit.framework */,
-				9FE736D91DAE6BFD003D8A56 /* SweetUIKit.framework.dSYM */,
+				9FF8806A1EB098E200DEDB1C /* SweetSwift.framework */,
+				9FF8806B1EB098E200DEDB1C /* SweetUIKit.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -338,7 +338,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				14C47E0E1CD2AE5F004A48DF /* Info.plist in Resources */,
-				9FE736E81DAE6BFD003D8A56 /* SweetUIKit.framework.dSYM in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +346,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FCC96D31DAD2A7E0098FD78 /* LaunchScreen.storyboard in Resources */,
-				9FE736E91DAE6BFD003D8A56 /* SweetUIKit.framework.dSYM in Resources */,
 				9FCC96D01DAD2A7E0098FD78 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,13 +486,13 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 29X3GG489T;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sample.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -507,9 +505,9 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 29X3GG489T;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sample.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0.1;
@@ -528,11 +526,10 @@
 				DEVELOPMENT_TEAM = 29X3GG489T;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -554,11 +551,10 @@
 				DEVELOPMENT_TEAM = 29X3GG489T;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0.1;
@@ -583,12 +579,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Formulaic/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.Formulaic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -618,12 +613,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Formulaic/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.Formulaic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
